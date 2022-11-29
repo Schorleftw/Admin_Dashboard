@@ -1,7 +1,8 @@
 :root {
     --main-font-size: 1.6rem;
     --heading-font-size: 3.2rem;
-    --svg-base-size: 4.2rem;
+    --svg-base-size: 3rem;
+    --svg-big: 5rem;
     --sidebar-color: #2b7cc7;
 }
 
@@ -55,8 +56,13 @@ img {
 .sidebar>.one {
     font-size: var(--heading-font-size);
     display: grid;
-    grid-template-columns: max(var(--svg-base-size)) 1fr;
+    grid-template-columns: max(var(--svg-big)) 1fr;
     gap: 20px;
+}
+
+.sidebar>.one>img {
+    width: var(--svg-big);
+    height: var(--svg-big);
 }
 
 .sidebar>.two {
